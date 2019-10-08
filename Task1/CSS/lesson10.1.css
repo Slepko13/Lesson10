@@ -1,0 +1,196 @@
+.container {
+    /* Style for "bg" */
+    width: 1500px;
+    height: 864px;
+    background-color: #b07cf7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-start;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 0 50px 0;
+}
+
+header div.title {
+    /* Style for "Blog" */
+    width: 190px;
+    height: 86px;
+    color: #ffffff;
+    font-family: Raleway;
+    font-size: 90px;
+    font-weight: 700;
+    vertical-align: top;
+    text-align: center;
+
+    margin-bottom: 30px;
+
+}
+
+header div.description {
+    /* Style for "Dolore mag" */
+    width: 580px;
+    height: 66px;
+    color: #ffffff;
+    font-family: Raleway;
+    font-size: 17px;
+    font-weight: 300;
+    text-align: center;
+    transition: transform 2s ease, margin 2s ease;
+}
+
+header div.description:hover {
+    transform: scale(2.5, 2.5);
+    transition-duration: scale 3s;
+    margin-top: 40px;
+}
+
+main {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.block1 {
+    /* Style for "img" */
+    width: 370px;
+    height: 310px;
+    background:
+        url(../Images/img1.png);
+    margin: 10px;
+    position: relative;
+
+}
+
+.block2 {
+    width: 370px;
+    height: 310px;
+    background: url(../Images/img2.png);
+    margin: 10px;
+    position: relative;
+
+}
+
+.block3 {
+    width: 370px;
+    height: 310px;
+    background: url(../Images/img3.png);
+    margin: 10px;
+    position: relative;
+
+}
+
+.date {
+    /* Style for "bg" */
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: rgba(38, 38, 38, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    transition: background 5s ease;
+}
+
+.date:hover {
+    transform: rotate3d(0, 1, 0, 360deg);
+    background: rgba(19, 7, 7, 0.11);
+    transition: transform 5s ease;
+
+}
+
+.date div:first-child {
+    /* Style for "14" */
+    color: #ffffff;
+    font-family: Raleway;
+    font-size: 32px;
+    font-weight: 700;
+    height: 30px;
+    width: 60px;
+    position: relative;
+    top: -5px;
+}
+
+.date div:last-child {
+    /* Style for "NOV" */
+
+    height: 30px;
+    color: #ffffff;
+    font-family: Raleway;
+    font-size: 21px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.grad {
+    /* Style for "gradient" */
+    width: 370px;
+    height: 151px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 100%);
+    position: absolute;
+    bottom: 0;
+    transition: opacity 3s;
+}
+
+.block1:hover .grad,
+.block2:hover .grad,
+.block3:hover .grad {
+    opacity: 0;
+
+}
+
+.top {
+    width: 307px;
+    height: 78px;
+    color: #ffffff;
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    position: absolute;
+    left: 20px;
+    top: 205px;
+    text-align: left;
+}
+
+.bottom {
+    color: #ffffff;
+    font-family: Raleway;
+    font-size: 13px;
+    font-weight: 300;
+    position: absolute;
+    left: 20px;
+    bottom: 23px;
+    text-align: left;
+}
+
+button {
+    /* Style for "bg" */
+    width: 200px;
+    height: 55px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    background-color: #f72b3b;
+    /* Style for "VIEW MORE" */
+    border: none;
+    color: #ffffff;
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 25px;
+    text-transform: uppercase;
+    transition: transform 2s ease;
+
+}
+
+button:hover {
+
+    transform: scale(1.5, 1.5);
+
+}
